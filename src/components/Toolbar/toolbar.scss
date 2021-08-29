@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+
+.toolbar {
+  position: absolute;
+
+  height: $toolbar-height;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  box-shadow: 0 4px 5px gray;
+
+  &__btn {
+    height: 25px;
+    width: 25px;
+    border: none;
+    margin: 5px;
+
+    outline: none;
+    cursor: pointer;
+    background-size: contain !important;
+    background-position: center !important;
+  }
+
+  .brush {
+    margin-left: 10px;
+
+    background: url("../../assets/img/brush.png") no-repeat ;
+  }
+
+  .rect {
+    background: url("../../assets/img/rect.png") no-repeat ;
+  }
+
+  .circle {
+    background: url("../../assets/img/circle.png") no-repeat ;
+  }
+
+  .eraser {
+    background: url("../../assets/img/eraser.png") no-repeat ;
+  }
+
+  .line {
+    background: url("../../assets/img/line.png") no-repeat ;
+  }
+
+  .undo {
+    margin-left: auto;
+    background: url("../../assets/img/undo.svg") no-repeat ;
+  }
+
+  .change-color {
+    margin-left: 10px;
+  }
+
+  .redo {
+    background: url("../../assets/img/redo.svg") no-repeat ;
+  }
+
+  .save {
+    margin-right: 10px;
+
+    background: url("../../assets/img/save.svg") no-repeat ;
+  }
+}
